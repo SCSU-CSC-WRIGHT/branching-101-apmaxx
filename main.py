@@ -2,6 +2,6 @@
 
 for i in range(5):
     number = input("Enter a number: ")
-    total += number
+    total = number
 
-print("The running total is: "  total)
+print("The running total is: " + total)
