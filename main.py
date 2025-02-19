@@ -1,7 +1,18 @@
 """There are 3 errors in this code. Please use your own ability to find them all. Consider this a Python refresher."""
 
-for i in range(5):
-    number = input("Enter a number: ")
-    total += number
+def calculate_running_total(n):
 
-print("The running total is: "  total)
+    total = 0 
+    for i in range(n):
+        number = int(input("Enter a number: "))
+        total += number
+
+    print("The running total is: ",  total)
+    return total
+
+def main():
+    num_inputs = 5
+    calculate_running_total(num_inputs)
+
+if __name__ == "__main__":
+    main()
